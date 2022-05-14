@@ -1,0 +1,33 @@
+.card {
+  color: #fff;
+  margin-left: 50px;
+}
+
+.posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 40px;
+}
+
+.posters::-webkit-scrollbar {
+  display: none;
+}
+
+.poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+}
+
+.poster:hover {
+  transform: scale(1.5);
+}
+.posterLarge {
+  max-height: 250px;
+}
+.posterLarge:hover {
+  transform: scale(1.5);
+}
